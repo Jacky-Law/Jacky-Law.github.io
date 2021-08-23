@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="python,TDD,测试驱动开发,python后端," />
 
 
 
@@ -79,16 +79,20 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="为什么需要记录Python代码？项目文档应该包括什么？如何编写和生成文档？ 文档是软件开发的重要组成部分。 如果没有适当的文档，内部和外部利益相关者可能很难或不可能使用或维护我们的代码。这也使得新加入的开发人员变得更加困难。甚至自己也看不懂自己写下的代码。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://luowenjie.cn/2021/08/22/hello-world/index.html">
+<meta property="og:title" content="3.Python代码质量">
+<meta property="og:url" content="http://luowenjie.cn/2021/08/23/3-Python%E4%BB%A3%E7%A0%81%E8%B4%A8%E9%87%8F/index.html">
 <meta property="og:site_name" content="添慌夜谈">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="为什么需要记录Python代码？项目文档应该包括什么？如何编写和生成文档？ 文档是软件开发的重要组成部分。 如果没有适当的文档，内部和外部利益相关者可能很难或不可能使用或维护我们的代码。这也使得新加入的开发人员变得更加困难。甚至自己也看不懂自己写下的代码。">
 <meta property="og:locale">
-<meta property="article:published_time" content="2021-08-22T12:54:38.751Z">
-<meta property="article:modified_time" content="2021-08-23T09:21:14.090Z">
+<meta property="article:published_time" content="2021-08-23T09:16:14.000Z">
+<meta property="article:modified_time" content="2021-08-23T09:18:58.580Z">
 <meta property="article:author" content="Jacky Law">
+<meta property="article:tag" content="python">
+<meta property="article:tag" content="TDD">
+<meta property="article:tag" content="测试驱动开发">
+<meta property="article:tag" content="python后端">
 <meta name="twitter:card" content="summary">
 
 
@@ -119,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="http://luowenjie.cn/2021/08/22/hello-world/"/>
+  <link rel="canonical" href="http://luowenjie.cn/2021/08/23/3-Python代码质量/"/>
 
 
 
 
 
-  <title>Hello World | 添慌夜谈</title>
+  <title>3.Python代码质量 | 添慌夜谈</title>
   
 
 
@@ -316,7 +320,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://luowenjie.cn/2021/08/22/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://luowenjie.cn/2021/08/23/3-Python%E4%BB%A3%E7%A0%81%E8%B4%A8%E9%87%8F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
@@ -333,7 +337,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">3.Python代码质量</h1>
         
 
         <div class="post-meta">
@@ -345,8 +349,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-08-22T20:54:38+08:00">
-                2021-08-22
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-08-23T17:16:14+08:00">
+                2021-08-23
               </time>
             
 
@@ -355,6 +359,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/TDD/" itemprop="url" rel="index">
+                    <span itemprop="name">TDD</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -377,7 +403,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  75 words
+                  690 words
                 </span>
               
 
@@ -393,7 +419,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1 min
+                  3 min
                 </span>
               
             </div>
@@ -414,20 +440,42 @@
       
 
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+        <section id="nice" data-tool="mdnice编辑器" data-website="https://www.mdnice.com" style="font-size: 16px; color: black; padding: 0 10px; line-height: 1.6; word-spacing: 0px; letter-spacing: 0px; word-break: break-word; word-wrap: break-word; text-align: left; font-family: Optima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><p data-tool="mdnice编辑器" style="font-size: 16px; padding-top: 8px; padding-bottom: 8px; margin: 0; line-height: 26px; color: black;">为什么需要记录Python代码？项目文档应该包括什么？如何编写和生成文档？</p>
+<p data-tool="mdnice编辑器" style="font-size: 16px; padding-top: 8px; padding-bottom: 8px; margin: 0; line-height: 26px; color: black;">文档是软件开发的重要组成部分。 如果没有适当的文档，内部和外部利益相关者可能很难或不可能使用或维护我们的代码。这也使得新加入的开发人员变得更加困难。甚至自己也看不懂自己写下的代码。</p>
 <span id="more"></span>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
+<h2 data-tool="mdnice编辑器" style="margin-top: 30px; margin-bottom: 15px; padding: 0px; font-weight: bold; color: black; border-bottom: 2px solid rgb(239, 112, 96); font-size: 1.3em;"><span class="prefix" style="display: none;"></span><span class="content" style="display: inline-block; font-weight: bold; background: rgb(239, 112, 96); color: #ffffff; padding: 3px 10px 1px; border-top-right-radius: 3px; border-top-left-radius: 3px; margin-right: 3px;">1 注释 vs 文档</span><span class="suffix"></span><span style="display: inline-block; vertical-align: bottom; border-bottom: 36px solid #efebe9; border-right: 20px solid transparent;"> </span></h2>
+<p data-tool="mdnice编辑器" style="font-size: 16px; padding-top: 8px; padding-bottom: 8px; margin: 0; line-height: 26px; color: black;">文档是一个独立的资源，可以帮助其他人使用我们的API、程序包、库或框架等，而无需阅读源代码。而注释是供阅读源代码的开发人员使用的。 文档应该告诉其他人：</p>
+<ol data-tool="mdnice编辑器" style="margin-top: 8px; margin-bottom: 8px; padding-left: 25px; color: black; list-style-type: decimal;">
+<li><section style="margin-top: 5px; margin-bottom: 5px; line-height: 26px; text-align: left; color: rgb(1,1,1); font-weight: 500;">什么时候用</section></li><li><section style="margin-top: 5px; margin-bottom: 5px; line-height: 26px; text-align: left; color: rgb(1,1,1); font-weight: 500;">怎么用</section></li></ol>
+<p data-tool="mdnice编辑器" style="font-size: 16px; padding-top: 8px; padding-bottom: 8px; margin: 0; line-height: 26px; color: black;">而注释应该告诉其他人：</p>
+<ol data-tool="mdnice编辑器" style="margin-top: 8px; margin-bottom: 8px; padding-left: 25px; color: black; list-style-type: decimal;">
+<li><section style="margin-top: 5px; margin-bottom: 5px; line-height: 26px; text-align: left; color: rgb(1,1,1); font-weight: 500;">这是啥？</section></li><li><section style="margin-top: 5px; margin-bottom: 5px; line-height: 26px; text-align: left; color: rgb(1,1,1); font-weight: 500;">这个函数做了什么？</section></li><li><section style="margin-top: 5px; margin-bottom: 5px; line-height: 26px; text-align: left; color: rgb(1,1,1); font-weight: 500;">为什么这样做？等。</section></li></ol>
+<h2 data-tool="mdnice编辑器" style="margin-top: 30px; margin-bottom: 15px; padding: 0px; font-weight: bold; color: black; border-bottom: 2px solid rgb(239, 112, 96); font-size: 1.3em;"><span class="prefix" style="display: none;"></span><span class="content" style="display: inline-block; font-weight: bold; background: rgb(239, 112, 96); color: #ffffff; padding: 3px 10px 1px; border-top-right-radius: 3px; border-top-left-radius: 3px; margin-right: 3px;">2 Docstrings</span><span class="suffix"></span><span style="display: inline-block; vertical-align: bottom; border-bottom: 36px solid #efebe9; border-right: 20px solid transparent;"> </span></h2>
+<p data-tool="mdnice编辑器" style="font-size: 16px; padding-top: 8px; padding-bottom: 8px; margin: 0; line-height: 26px; color: black;">Python的<code style="font-size: 14px; word-wrap: break-word; padding: 2px 4px; border-radius: 4px; margin: 0 2px; background-color: rgba(27,31,35,.05); font-family: Operator Mono, Consolas, Monaco, Menlo, monospace; word-break: break-all; color: rgb(239, 112, 96);">docstring</code>是一种特殊的字符串，它作为模块、函数、类或方法定义中的第一条语句出现，形成给定对象的<code style="font-size: 14px; word-wrap: break-word; padding: 2px 4px; border-radius: 4px; margin: 0 2px; background-color: rgba(27,31,35,.05); font-family: Operator Mono, Consolas, Monaco, Menlo, monospace; word-break: break-all; color: rgb(239, 112, 96);">__doc__</code>属性。 它使您可以将文档直接嵌入到源代码中：</p>
+<pre class="custom" data-tool="mdnice编辑器" style="margin-top: 10px; margin-bottom: 10px; border-radius: 5px; box-shadow: rgba(0, 0, 0, 0.55) 0px 2px 10px;"><span style="display: block; background: url(https://files.mdnice.com/user/3441/876cad08-0422-409d-bb5a-08afec5da8ee.svg); height: 30px; width: 100%; background-size: 40px; background-repeat: no-repeat; background-color: #1E1E1E; margin-bottom: -7px; border-radius: 5px; background-position: 10px 10px;"></span><code class="hljs" style="overflow-x: auto; padding: 16px; color: #DCDCDC; display: -webkit-box; font-family: Operator Mono, Consolas, Monaco, Menlo, monospace; font-size: 12px; -webkit-overflow-scrolling: touch; padding-top: 15px; background: #1E1E1E; border-radius: 5px;"><span class="hljs-string" style="color: #D69D85; line-height: 26px;">"""<br>The&nbsp;temperature&nbsp;module:&nbsp;Manipulate&nbsp;your&nbsp;temperature&nbsp;easily<br><br>Easily&nbsp;calculate&nbsp;daily&nbsp;average&nbsp;temperature<br>"""</span><br><br><span class="hljs-keyword" style="color: #569CD6; line-height: 26px;">from</span>&nbsp;typing&nbsp;<span class="hljs-keyword" style="color: #569CD6; line-height: 26px;">import</span>&nbsp;List<br><br><br><span class="hljs-class" style="color: #B8D7A3; line-height: 26px;"><span class="hljs-keyword" style="color: #569CD6; line-height: 26px;">class</span>&nbsp;<span class="hljs-title" style="color: #DCDCDC; line-height: 26px;">HighTemperature</span>:</span><br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="hljs-string" style="color: #D69D85; line-height: 26px;">"""Class&nbsp;representing&nbsp;very&nbsp;high&nbsp;temperatures"""</span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="hljs-function" style="color: #DCDCDC; line-height: 26px;"><span class="hljs-keyword" style="color: #569CD6; line-height: 26px;">def</span>&nbsp;<span class="hljs-title" style="color: #DCDCDC; line-height: 26px;">__init__</span><span class="hljs-params" style="color: #DCDCDC; line-height: 26px;">(self,&nbsp;value:&nbsp;float)</span>:</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="hljs-string" style="color: #D69D85; line-height: 26px;">"""<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:param&nbsp;value:&nbsp;value&nbsp;of&nbsp;temperature<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"""</span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.value&nbsp;=&nbsp;value<br><br><br><span class="hljs-function" style="color: #DCDCDC; line-height: 26px;"><span class="hljs-keyword" style="color: #569CD6; line-height: 26px;">def</span>&nbsp;<span class="hljs-title" style="color: #DCDCDC; line-height: 26px;">daily_average</span><span class="hljs-params" style="color: #DCDCDC; line-height: 26px;">(temperatures:&nbsp;List[float])</span>&nbsp;-&gt;&nbsp;float:</span><br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="hljs-string" style="color: #D69D85; line-height: 26px;">"""<br>&nbsp;&nbsp;&nbsp;&nbsp;Get&nbsp;average&nbsp;daily&nbsp;temperature<br><br>&nbsp;&nbsp;&nbsp;&nbsp;Calculate&nbsp;average&nbsp;temperature&nbsp;from&nbsp;multiple&nbsp;measurements<br><br>&nbsp;&nbsp;&nbsp;&nbsp;:param&nbsp;temperatures:&nbsp;list&nbsp;of&nbsp;temperatures<br>&nbsp;&nbsp;&nbsp;&nbsp;:return:&nbsp;average&nbsp;temperature<br>&nbsp;&nbsp;&nbsp;&nbsp;"""</span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="hljs-keyword" style="color: #569CD6; line-height: 26px;">return</span>&nbsp;sum(temperatures)&nbsp;/&nbsp;len(temperatures)<br></code></pre>
+<p data-tool="mdnice编辑器" style="font-size: 16px; padding-top: 8px; padding-bottom: 8px; margin: 0; line-height: 26px; color: black;">我们可以看到<code style="font-size: 14px; word-wrap: break-word; padding: 2px 4px; border-radius: 4px; margin: 0 2px; background-color: rgba(27,31,35,.05); font-family: Operator Mono, Consolas, Monaco, Menlo, monospace; word-break: break-all; color: rgb(239, 112, 96);">daily_average</code>的<code style="font-size: 14px; word-wrap: break-word; padding: 2px 4px; border-radius: 4px; margin: 0 2px; background-color: rgba(27,31,35,.05); font-family: Operator Mono, Consolas, Monaco, Menlo, monospace; word-break: break-all; color: rgb(239, 112, 96);">__doc</code>属性：</p>
+<pre class="custom" data-tool="mdnice编辑器" style="margin-top: 10px; margin-bottom: 10px; border-radius: 5px; box-shadow: rgba(0, 0, 0, 0.55) 0px 2px 10px;"><span style="display: block; background: url(https://files.mdnice.com/user/3441/876cad08-0422-409d-bb5a-08afec5da8ee.svg); height: 30px; width: 100%; background-size: 40px; background-repeat: no-repeat; background-color: #1E1E1E; margin-bottom: -7px; border-radius: 5px; background-position: 10px 10px;"></span><code class="hljs" style="overflow-x: auto; padding: 16px; color: #DCDCDC; display: -webkit-box; font-family: Operator Mono, Consolas, Monaco, Menlo, monospace; font-size: 12px; -webkit-overflow-scrolling: touch; padding-top: 15px; background: #1E1E1E; border-radius: 5px;"><span class="hljs-meta" style="color: #9B9B9B; line-height: 26px;">&gt;</span><span class="bash" style="line-height: 26px;">&gt;&gt;&nbsp;from&nbsp;temperature&nbsp;import&nbsp;daily_average</span><br><span class="hljs-meta" style="color: #9B9B9B; line-height: 26px;">&gt;</span><span class="bash" style="line-height: 26px;">&gt;&gt;</span><br><span class="hljs-meta" style="color: #9B9B9B; line-height: 26px;">&gt;</span><span class="bash" style="line-height: 26px;">&gt;&gt;&nbsp;<span class="hljs-built_in" style="color: #4EC9B0; line-height: 26px;">print</span>(daily_average.__doc__)</span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;Get&nbsp;average&nbsp;daily&nbsp;temperature<br><br>&nbsp;&nbsp;&nbsp;&nbsp;:param&nbsp;temperatures:&nbsp;list&nbsp;of&nbsp;temperatures<br>&nbsp;&nbsp;&nbsp;&nbsp;:return:&nbsp;average&nbsp;temperature<br></code></pre>
+<p data-tool="mdnice编辑器" style="font-size: 16px; padding-top: 8px; padding-bottom: 8px; margin: 0; line-height: 26px; color: black;">我们可以用内置的<code style="font-size: 14px; word-wrap: break-word; padding: 2px 4px; border-radius: 4px; margin: 0 2px; background-color: rgba(27,31,35,.05); font-family: Operator Mono, Consolas, Monaco, Menlo, monospace; word-break: break-all; color: rgb(239, 112, 96);">help</code>查看更详细的信息：</p>
+<pre class="custom" data-tool="mdnice编辑器" style="margin-top: 10px; margin-bottom: 10px; border-radius: 5px; box-shadow: rgba(0, 0, 0, 0.55) 0px 2px 10px;"><span style="display: block; background: url(https://files.mdnice.com/user/3441/876cad08-0422-409d-bb5a-08afec5da8ee.svg); height: 30px; width: 100%; background-size: 40px; background-repeat: no-repeat; background-color: #1E1E1E; margin-bottom: -7px; border-radius: 5px; background-position: 10px 10px;"></span><code class="hljs" style="overflow-x: auto; padding: 16px; color: #DCDCDC; display: -webkit-box; font-family: Operator Mono, Consolas, Monaco, Menlo, monospace; font-size: 12px; -webkit-overflow-scrolling: touch; padding-top: 15px; background: #1E1E1E; border-radius: 5px;"><span class="hljs-meta" style="color: #9B9B9B; line-height: 26px;">&gt;&gt;&gt;&nbsp;</span><span class="hljs-keyword" style="color: #569CD6; line-height: 26px;">import</span>&nbsp;temperature<br>&gt;&gt;&gt;<br><span class="hljs-meta" style="color: #9B9B9B; line-height: 26px;">&gt;&gt;&gt;&nbsp;</span>help(temperature)<br></code></pre>
+<p data-tool="mdnice编辑器" style="font-size: 16px; padding-top: 8px; padding-bottom: 8px; margin: 0; line-height: 26px; color: black;">我们可以通过<code style="font-size: 14px; word-wrap: break-word; padding: 2px 4px; border-radius: 4px; margin: 0 2px; background-color: rgba(27,31,35,.05); font-family: Operator Mono, Consolas, Monaco, Menlo, monospace; word-break: break-all; color: rgb(239, 112, 96);">docstrings</code>指定：</p>
+<ol data-tool="mdnice编辑器" style="margin-top: 8px; margin-bottom: 8px; padding-left: 25px; color: black; list-style-type: decimal;">
+<li><section style="margin-top: 5px; margin-bottom: 5px; line-height: 26px; text-align: left; color: rgb(1,1,1); font-weight: 500;">函数参数</section></li><li><section style="margin-top: 5px; margin-bottom: 5px; line-height: 26px; text-align: left; color: rgb(1,1,1); font-weight: 500;">函数返回</section></li><li><section style="margin-top: 5px; margin-bottom: 5px; line-height: 26px; text-align: left; color: rgb(1,1,1); font-weight: 500;">类属性</section></li><li><section style="margin-top: 5px; margin-bottom: 5px; line-height: 26px; text-align: left; color: rgb(1,1,1); font-weight: 500;">异常</section></li><li><section style="margin-top: 5px; margin-bottom: 5px; line-height: 26px; text-align: left; color: rgb(1,1,1); font-weight: 500;">边界或限制</section></li><li><section style="margin-top: 5px; margin-bottom: 5px; line-height: 26px; text-align: left; color: rgb(1,1,1); font-weight: 500;">示例代码等</section></li></ol>
+<p data-tool="mdnice编辑器" style="font-size: 16px; padding-top: 8px; padding-bottom: 8px; margin: 0; line-height: 26px; color: black;">比较流行的文档风格：</p>
+<ol data-tool="mdnice编辑器" style="margin-top: 8px; margin-bottom: 8px; padding-left: 25px; color: black; list-style-type: decimal;">
+<li><section style="margin-top: 5px; margin-bottom: 5px; line-height: 26px; text-align: left; color: rgb(1,1,1); font-weight: 500;"><span class="footnote-word" style="font-weight: bold; color: #ff3502;">Google</span><sup class="footnote-ref" style="line-height: 0; font-weight: bold; color: rgb(239, 112, 96);">[1]</sup></section></li><li><section style="margin-top: 5px; margin-bottom: 5px; line-height: 26px; text-align: left; color: rgb(1,1,1); font-weight: 500;"><span class="footnote-word" style="font-weight: bold; color: #ff3502;">reStructuredText</span><sup class="footnote-ref" style="line-height: 0; font-weight: bold; color: rgb(239, 112, 96);">[2]</sup></section></li><li><section style="margin-top: 5px; margin-bottom: 5px; line-height: 26px; text-align: left; color: rgb(1,1,1); font-weight: 500;"><span class="footnote-word" style="font-weight: bold; color: #ff3502;">Numpy</span><sup class="footnote-ref" style="line-height: 0; font-weight: bold; color: rgb(239, 112, 96);">[3]</sup></section></li><li><section style="margin-top: 5px; margin-bottom: 5px; line-height: 26px; text-align: left; color: rgb(1,1,1); font-weight: 500;"><span class="footnote-word" style="font-weight: bold; color: #ff3502;">Epytext</span><sup class="footnote-ref" style="line-height: 0; font-weight: bold; color: rgb(239, 112, 96);">[4]</sup></section></li></ol>
+<p data-tool="mdnice编辑器" style="font-size: 16px; padding-top: 8px; padding-bottom: 8px; margin: 0; line-height: 26px; color: black;">选择一种适合自己的文档风格，或者自定义一种属于自己的风格，使我们的项目更清晰。</p>
+<h3 class="footnotes-sep" data-tool="mdnice编辑器" style="margin-top: 30px; margin-bottom: 15px; padding: 0px; font-weight: bold; color: black; font-size: 20px;"><span style="display: block;">参考资料</span></h3>
+<section class="footnotes" data-tool="mdnice编辑器">
+<span id="fn1" class="footnote-item" style="display: flex;"><span class="footnote-num" style="display: inline; width: 10%; background: none; font-size: 80%; opacity: 0.6; line-height: 26px; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">[1] </span><p style="padding-top: 8px; padding-bottom: 8px; display: inline; font-size: 14px; width: 90%; padding: 0px; margin: 0; line-height: 26px; color: black; word-break: break-all; width: calc(100%-50);">Google: <em style="font-style: italic; color: black;">https://github.com/google/styleguide/blob/gh-pages/pyguide.md#38-comments-and-docstrings</em></p>
+</span>
+<span id="fn2" class="footnote-item" style="display: flex;"><span class="footnote-num" style="display: inline; width: 10%; background: none; font-size: 80%; opacity: 0.6; line-height: 26px; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">[2] </span><p style="padding-top: 8px; padding-bottom: 8px; display: inline; font-size: 14px; width: 90%; padding: 0px; margin: 0; line-height: 26px; color: black; word-break: break-all; width: calc(100%-50);">reStructuredText: <em style="font-style: italic; color: black;">https://docutils.sourceforge.io/rst.html</em></p>
+</span>
+<span id="fn3" class="footnote-item" style="display: flex;"><span class="footnote-num" style="display: inline; width: 10%; background: none; font-size: 80%; opacity: 0.6; line-height: 26px; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">[3] </span><p style="padding-top: 8px; padding-bottom: 8px; display: inline; font-size: 14px; width: 90%; padding: 0px; margin: 0; line-height: 26px; color: black; word-break: break-all; width: calc(100%-50);">Numpy: <em style="font-style: italic; color: black;">https://numpydoc.readthedocs.io/en/latest/format.html</em></p>
+</span>
+<span id="fn4" class="footnote-item" style="display: flex;"><span class="footnote-num" style="display: inline; width: 10%; background: none; font-size: 80%; opacity: 0.6; line-height: 26px; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">[4] </span><p style="padding-top: 8px; padding-bottom: 8px; display: inline; font-size: 14px; width: 90%; padding: 0px; margin: 0; line-height: 26px; color: black; word-break: break-all; width: calc(100%-50);">Epytext: <em style="font-style: italic; color: black;">http://epydoc.sourceforge.net/epytext.html</em></p>
+</span>
+</section>
+</section>
       
     </div>
     
@@ -489,6 +537,18 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/python/" rel="tag"># python</a>
+          
+            <a href="/tags/TDD/" rel="tag"># TDD</a>
+          
+            <a href="/tags/%E6%B5%8B%E8%AF%95%E9%A9%B1%E5%8A%A8%E5%BC%80%E5%8F%91/" rel="tag"># 测试驱动开发</a>
+          
+            <a href="/tags/python%E5%90%8E%E7%AB%AF/" rel="tag"># python后端</a>
+          
+        </div>
+      
 
       
       
@@ -498,14 +558,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2021/08/23/2-Python%E6%B5%8B%E8%AF%95/" rel="next" title="2.Python测试">
+                <i class="fa fa-chevron-left"></i> 2.Python测试
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2021/08/23/1-Python%E4%BE%9D%E8%B5%96%E5%92%8C%E7%8E%AF%E5%A2%83%E7%AE%A1%E7%90%86/" rel="prev" title="1.Python依赖和环境管理">
-                1.Python依赖和环境管理 <i class="fa fa-chevron-right"></i>
+              <a href="/2021/08/23/4-Python%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5/" rel="prev" title="4.Python类型检查">
+                4.Python类型检查 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -651,7 +715,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#nice"><span class="nav-number">1.</span> <span class="nav-text">1 注释 vs 文档 </span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#nice"><span class="nav-number">2.</span> <span class="nav-text">2 Docstrings </span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#nice"><span class="nav-number">2.1.</span> <span class="nav-text">参考资料</span></a></li></ol></li></ol></div>
             
 
           </div>
