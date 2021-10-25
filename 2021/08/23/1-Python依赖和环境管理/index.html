@@ -11,6 +11,16 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
+<script>
+  (function(){
+    if(''){
+      if (prompt('请输入文章密码') !== ''){
+        alert('密码错误！');
+        history.back();
+      }
+    }
+  })();
+</script>
 
 
 
@@ -88,7 +98,7 @@
 <meta property="og:locale">
 <meta property="og:image" content="https://files.mdnice.com/user/11044/5b06e209-4517-4057-b7e8-7051c6be1dfe.png">
 <meta property="article:published_time" content="2021-08-23T08:13:30.000Z">
-<meta property="article:modified_time" content="2021-08-23T09:15:44.140Z">
+<meta property="article:modified_time" content="2021-10-25T12:10:37.010Z">
 <meta property="article:author" content="Jacky Law">
 <meta property="article:tag" content="python">
 <meta property="article:tag" content="TDD">
